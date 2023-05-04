@@ -4,6 +4,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -94,6 +95,11 @@ main {
 .informacion {
     color: #495057;
     font-size: 18px;
+}
+
+.logoinfo{
+    float: left;
+    margin: 6px;
 }
 
 .footer {
