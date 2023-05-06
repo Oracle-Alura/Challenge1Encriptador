@@ -10,60 +10,83 @@ const mensaje = document.querySelector(".mensaje");
 
 // Función para encriptar//
 function encriptar(stringEncriptada) {
-    let matrizCodigo = [
-        ["e", "enter"],
-        ["i", "imes"],
-        ["a", "ai"],
-        ["o", "ober"],
-        ["u", "ufat"]
-    ];
-    stringEncriptada = stringEncriptada.toLowerCase();
+  let matrizCodigo = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
+  stringEncriptada = stringEncriptada.toLowerCase();
 
-    for (let i = 0; i < matrizCodigo.length; i++) {
-        if (stringEncriptada.includes(matrizCodigo[i][0])) {
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
-        }
+  for (let i = 0; i < matrizCodigo.length; i++) {
+    if (stringEncriptada.includes(matrizCodigo[i][0])) {
+      stringEncriptada = stringEncriptada.replaceAll(
+        matrizCodigo[i][0],
+        matrizCodigo[i][1]
+      );
     }
-    return stringEncriptada;
+  }
+  return stringEncriptada;
 }
 
 //Conectar función a su respectivo botón en el HTML//
 function btnEncriptar() {
-    const textEncriptado = encriptar(textArea.value);
-    mensaje.value = textEncriptado;
-    textArea.value = ""; //limpio el campo
-    mensaje.style.backgroundImage = "none"; //saco la imagen   
+  const textEncriptado = encriptar(textArea.value);
+  mensaje.value = textEncriptado;
+  textArea.value = ""; //limpio el campo
+  mensaje.style.backgroundImage = "none"; //saco la imagen
 }
 
 //Conectar función a su respectivo botón en el HTML//
 function btnDesencriptar() {
-    const textEncriptado = desencriptar(textArea.value);
-    mensaje.value = textEncriptado;
-    textArea.value = ""; //limpio el campo    
+  const textEncriptado = desencriptar(textArea.value);
+  mensaje.value = textEncriptado;
+  textArea.value = ""; //limpio el campo
 }
 
 //Función para desencriptar
 function desencriptar(stringDesencriptada) {
-    let matrizCodigo = [
-        ["e", "enter"],
-        ["i", "imes"],
-        ["a", "ai"],
-        ["o", "ober"],
-        ["u", "ufat"]
-    ];
-    stringDesencriptada = stringDesencriptada.toLowerCase();
+  let matrizCodigo = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
+  stringDesencriptada = stringDesencriptada.toLowerCase();
 
-    for (let i = 0; i < matrizCodigo.length; i++) {
-        if (stringDesencriptada.includes(matrizCodigo[i][1])) {
-            stringDesencriptada = stringDesencriptada.replaceAll( matrizCodigo[i][1],matrizCodigo[i][0]);
-        }
+  for (let i = 0; i < matrizCodigo.length; i++) {
+    if (stringDesencriptada.includes(matrizCodigo[i][1])) {
+      stringDesencriptada = stringDesencriptada.replaceAll(
+        matrizCodigo[i][1],
+        matrizCodigo[i][0]
+      );
     }
-    return stringDesencriptada;
+  }
+  return stringDesencriptada;
 }
 
+//EXTRA: botón copiar
+function btnCopiar() {
+    //Obtengo el campo de texto
+  var textoCopiado = document.getElementById("miInput");
 
-    //Capturar el texto escrito en el campo del input del HTML//
+  //Selecciono el campo de texto
+  textoCopiado.select();
+  textoCopiado.setSelectionRange(0, 99999); //para celulares
 
-    //Desarrollar la lógica de la encriptación//
+    //Copiar el texto dentro del campo de texto
+  navigator.clipboard.writeText(textoCopiado.value);
 
-    //Mostrar en la pantalla el resultado del texto encriptado//
+    //Alert que el texto ha sido copiado
+  alert('Se ha copiado el siguiente texto en el portapapeles: \n'+ textoCopiado.value);
+}
+
+//EXTRA 2: boton pegar?
+
+//Capturar el texto escrito en el campo del input del HTML//
+
+//Desarrollar la lógica de la encriptación//
+
+//Mostrar en la pantalla el resultado del texto encriptado//

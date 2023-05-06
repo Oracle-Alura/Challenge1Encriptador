@@ -2,28 +2,45 @@
     background: #F3F5FC;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1em;
     line-height: 150%;
     box-sizing: border-box;
 }
 
 .logo {
-    padding-top: 10px;
-    margin-left: 10px;
+    padding-top: 5%;
+    margin-left: 5%;
     width: 10%;
 }
 
 main {
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.respuesta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 2em;
+    margin: 2%;
+    width: 30%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    height: auto;
+
 }
 
 .text-area {
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    margin-top: 10%;
     text-transform: lowercase;
+    background-color: white;
+    border-radius: 2em;
+    padding: 5%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 ::placeholder {
@@ -38,74 +55,107 @@ main {
     background: white;
     background-image: url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
+    background-size: contain;
+    background-position: center;
+    border: none;    
     color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
+    border-radius: 2em;
+    padding: 5%;
+
 }
 
 .mensaje:focus {
     outline: none;
 }
 
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1%;
+}
+
 .botones {
     display: flex;
-    margin-top: 18px;
+    margin: 1%;
 
 }
 
 .btn-desencriptar {
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 1em;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
+    height: 100%;
+    width: 60%;
+    padding: 5%;
+    margin: 1%;
+
+
+}
+.btn-desencriptar:hover  {    
+    background-color: white;
+    color: #0A3871;
 }
 
 .btn-encriptar {
     background-color: #0A3871;
     border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 1em;
     color: white;
     cursor: pointer;
-    height: 67px;
-    width: 328px;
-
+    height: 100%;
+    width: 60%;
+    padding: 5%;
+    margin: 1%;
 }
+
+.btn-encriptar:hover {
+    
+    background-color: white;
+    color: #0A3871;
+}
+
 
 .btn-copiar {
     border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 1em;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
-    width: 336px;
+    height: 15%;
+    width: 50%;
+    padding: 2%;
+    margin: 2% auto;
 
+}
+
+.btn-copiar:hover {
+    background-color: white;
+    color: #0A3871;
 }
 
 .informacion {
     color: #495057;
-    font-size: 18px;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
 }
 
-.logoinfo{
+.logoinfo {
     float: left;
-    margin: 6px;
+    margin-top: 0.7%;
+    margin-right: 1%;
 }
 
-.footer {
+footer  {
     color: #495057;
     font-size: 10px;
     text-align: center;
+    margin: 1%;
+        
 }
 
 .imagenes {
@@ -119,5 +169,44 @@ main {
     width: 20px;
     margin: 10px;
 
+
+}
+
+/* Vista celular */
+@media (max-width: 374px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .botones {
+        flex-direction: column;
+        gap: 10%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .ingreso,
+    .respuesta {
+        width: 90%;
+        margin-top: 10%;
+    }
+}
+
+
+
+/* Vista tablet */
+@media only screen and (min-width: 375px) and (max-width: 768px){
+    main {
+        flex-wrap: wrap;
+    }
+
+    .ingreso,
+    .respuesta {
+        width: 90%;
+        height: 80%
+    }
+}
+
+/* Vista Desktop */
+@media (min-width: 769px) {
 
 }

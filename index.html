@@ -2,70 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Agregar etiquetas meta con info  -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;400&family=Sofia&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <title>Challenge 1 - Encriptador</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="imagenes/Frame 6.png" alt="Logo de Alura">
+        <img class="logo" src="imagenes/Frame 6.png" alt="Logo de Alura" />
     </header>
 
     <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto"></textarea>
-            <div>
-                <img class="logoinfo" src="imagenes/bi_exclamation-circle-fill.png" alt="Logo de información">
-                <h6 class="informacion">
-                    Solo letras minúsculas y sin acento
-                </h6>
+        <section class="ingreso">
+            <textarea class="text-area" cols="60" rows="10" placeholder="Ingrese el texto"></textarea>
+            <div class="informacion">
+                <img class="logoinfo" src="imagenes/bi_exclamation-circle-fill.png" alt="Logo de información" />
+                <h6>Solo letras minúsculas y sin acento</h6>
             </div>
             <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
             </div>
         </section>
 
-        <section>
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
-            <div>
-                <button class="btn-copiar">Copiar</button>
-            </div>
+        <section class="respuesta">
+            <textarea class="mensaje" id="miInput" cols="20" rows="10"></textarea>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
         </section>
     </main>
 
-
     <footer>
-        <p class="footer">Oracle ONE - Alura Latam - Challenge 1 - Encriptador</p>
+
+        <p class="footer">
+            Oracle ONE - Alura Latam - Challenge 1 - Encriptador
+        </p>
         <p class="footer">Realizado por Alejandra R. de Cajal - Mayo 2023</p>
         <div class="imagenes">
-
             <a href="https://github.com/Oracle-Alura/Challenge1Encriptador" target="_blank"><img
-                    src="imagenes/github.png" alt="Link a github de este proyecto" class="github"></a>
+                    src="imagenes/github.png" alt="Link a github de este proyecto" class="github" /></a>
 
             <a href="https://www.linkedin.com/in/alejandra-r-de-cajal/" target="_blank"><img src="imagenes/linkedin.png"
-                    alt="Link a linkedin" class="linkedin"></a>
+                    alt="Link a linkedin" class="linkedin" /></a>
         </div>
+
     </footer>
 
-    <script src="script.js">
-    </script>
-
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
