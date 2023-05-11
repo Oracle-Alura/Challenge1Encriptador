@@ -8,15 +8,18 @@ const mensaje = document.querySelector(".mensaje");
 // La letra "o" es convertida para "ober"
 // La letra "u" es convertida para "ufat"
 
+// Defino constante con arrays dentro de un array.
+
+const matrizCodigo = [
+  ["e", "enter"],
+  ["i", "imes"],
+  ["a", "ai"],
+  ["o", "ober"],
+  ["u", "ufat"],
+];
+
 // Función para encriptar//
 function encriptar(stringEncriptada) {
-  let matrizCodigo = [
-    ["e", "enter"],
-    ["i", "imes"],
-    ["a", "ai"],
-    ["o", "ober"],
-    ["u", "ufat"],
-  ];
   stringEncriptada = stringEncriptada.toLowerCase();
 
   for (let i = 0; i < matrizCodigo.length; i++) {
@@ -36,6 +39,8 @@ function btnEncriptar() {
   mensaje.value = textEncriptado;
   textArea.value = ""; //limpio el campo
   mensaje.style.backgroundImage = "none"; //saco la imagen
+  document.getElementById("parrafo1").style.display = "none";
+  document.getElementById("parrafo2").style.display = "none";
 }
 
 //Conectar función a su respectivo botón en el HTML//
@@ -47,13 +52,6 @@ function btnDesencriptar() {
 
 //Función para desencriptar
 function desencriptar(stringDesencriptada) {
-  let matrizCodigo = [
-    ["e", "enter"],
-    ["i", "imes"],
-    ["a", "ai"],
-    ["o", "ober"],
-    ["u", "ufat"],
-  ];
   stringDesencriptada = stringDesencriptada.toLowerCase();
 
   for (let i = 0; i < matrizCodigo.length; i++) {
@@ -69,24 +67,35 @@ function desencriptar(stringDesencriptada) {
 
 //EXTRA: botón copiar
 function btnCopiar() {
-    //Obtengo el campo de texto
+  //Obtengo el campo de texto
   var textoCopiado = document.getElementById("miInput");
 
   //Selecciono el campo de texto
   textoCopiado.select();
   textoCopiado.setSelectionRange(0, 99999); //para celulares
 
-    //Copiar el texto dentro del campo de texto
+  //Copiar el texto dentro del campo de texto
   navigator.clipboard.writeText(textoCopiado.value);
 
-    //Alert que el texto ha sido copiado
-  alert('Se ha copiado el siguiente texto en el portapapeles: \n'+ textoCopiado.value);
+  //Aparece el boton pegar
+  document.getElementById("paste").style.display = "show";
+  document.getElementById("paste").style.display = "inherit";
+
+  //Alert que el texto ha sido copiado
+  alert(
+    "Se ha copiado el siguiente texto en el portapapeles: \n" +
+      textoCopiado.value
+  );
 }
 
 //EXTRA 2: boton pegar?
+const COPY = document.querySelector('#copy');
+const PASTE = document.querySelector('#paste');
+const VALUE = document.querySelector('#value');
+const BIN = document.querySelector('#paste-bin');
 
-//Capturar el texto escrito en el campo del input del HTML//
+PASTE.addEventListener('click', async () => {
+  const READ = await navigator.clipboard.readText()
+  BIN.value = READ
+})
 
-//Desarrollar la lógica de la encriptación//
-
-//Mostrar en la pantalla el resultado del texto encriptado//

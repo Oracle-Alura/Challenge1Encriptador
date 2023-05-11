@@ -3,7 +3,7 @@
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1em;
-    line-height: 150%;
+    line-height: 130%;
     box-sizing: border-box;
 }
 
@@ -61,7 +61,7 @@ main {
     color: #0A3871;
     border-radius: 2em;
     padding: 5%;
-
+    margin: 5%;
 }
 
 .mensaje:focus {
@@ -87,7 +87,7 @@ main {
     border-radius: 1em;
     color: #0A3871;
     cursor: pointer;
-    height: 100%;
+    height: 80%;
     width: 60%;
     padding: 5%;
     margin: 1%;
@@ -105,7 +105,7 @@ main {
     border-radius: 1em;
     color: white;
     cursor: pointer;
-    height: 100%;
+    height: 80%;
     width: 60%;
     padding: 5%;
     margin: 1%;
@@ -117,13 +117,12 @@ main {
     color: #0A3871;
 }
 
-
 .btn-copiar {
     border: 1px solid #0A3871;
     border-radius: 1em;
     color: #0A3871;
     cursor: pointer;
-    height: 15%;
+    height: 10%;
     width: 50%;
     padding: 2%;
     margin: 2% auto;
@@ -131,6 +130,28 @@ main {
 }
 
 .btn-copiar:hover {
+    background-color: white;
+    color: #0A3871;
+}
+
+.btn-pegar{
+    display: none;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 1em;
+    color: white;
+    cursor: pointer;
+    height: 80%;
+    width: 60%;
+    padding: 5%;
+    margin: 1%;
+    margin-left: 5%;
+    justify-content: center;
+
+}
+
+.btn-pegar:hover {
+    
     background-color: white;
     color: #0A3871;
 }
@@ -150,6 +171,24 @@ main {
     margin-right: 1%;
 }
 
+#parrafo1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: white;
+}
+
+#parrafo2{
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    background: white;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+
 footer  {
     color: #495057;
     font-size: 10px;
@@ -168,7 +207,6 @@ footer  {
 .linkedin {
     width: 20px;
     margin: 10px;
-
 
 }
 
@@ -190,8 +228,6 @@ footer  {
         margin-top: 10%;
     }
 }
-
-
 
 /* Vista tablet */
 @media only screen and (min-width: 375px) and (max-width: 768px){

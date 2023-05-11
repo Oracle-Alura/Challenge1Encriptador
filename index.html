@@ -26,7 +26,7 @@
 
     <main>
         <section class="ingreso">
-            <textarea class="text-area" cols="60" rows="10" placeholder="Ingrese el texto"></textarea>
+            <textarea id="paste-bin" class="text-area" cols="60" rows="10" placeholder="Ingrese el texto"></textarea>
             <div class="informacion">
                 <img class="logoinfo" src="imagenes/bi_exclamation-circle-fill.png" alt="Logo de información" />
                 <h6>Solo letras minúsculas y sin acento</h6>
@@ -38,12 +38,18 @@
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">
                     Desencriptar
                 </button>
+                <button id="paste" class="btn-pegar">
+                    Pegar
+                </button>
+
             </div>
         </section>
 
         <section class="respuesta">
             <textarea class="mensaje" id="miInput" cols="20" rows="10"></textarea>
             <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            <p id="parrafo1">Ningún mensaje fue encontrado</p>
+            <p id="parrafo2">Ingresa el texto que desees encriptar o desencriptar</p>
         </section>
     </main>
 
