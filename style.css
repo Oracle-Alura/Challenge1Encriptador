@@ -6,6 +6,9 @@
     line-height: 130%;
     box-sizing: border-box;
 }
+input:invalid{
+    border-color:"red";
+}
 
 .logo {
     padding-top: 5%;
