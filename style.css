@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 input:invalid{
-    border-color: red;
+    border-color:"red";
 }
 
 .logo {
