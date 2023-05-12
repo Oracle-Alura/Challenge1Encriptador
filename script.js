@@ -19,13 +19,16 @@ const matrizCodigo = [
 ];
 
 //Validacion previa a encriptar
-function validar() {
-  let acentos = document.getElementById("paste-bin").value;
 
-  if (acentos == "á") {
-    alert("hay un acento!");
-  } else {
-    btnEncriptar();
+// Creamos el evento para cada tecla pulsada
+document.getElementById("paste-bin").addEventListener("keypress", verificar);
+function verificar(e) {
+  // comprobamos con una expresion regular que el caracter pulsado sea
+  // una letra, numero o un espacio
+  if (e.key.match(/[a-z\s]/i) === null) {
+    // Si la tecla pulsada no es la correcta, eliminado la pulsación
+    e.preventDefault();
+    alert("Solo letras minúsculas y sin acentos");
   }
 }
 
