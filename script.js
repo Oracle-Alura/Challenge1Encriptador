@@ -18,6 +18,17 @@ const matrizCodigo = [
   ["u", "ufat"],
 ];
 
+//Validacion previa a encriptar
+function validar() {
+  let acentos = document.getElementById("paste-bin").value;
+
+  if (acentos == "á") {
+    alert("hay un acento!");
+  } else {
+    btnEncriptar();
+  }
+}
+
 // Función para encriptar//
 function encriptar(stringEncriptada) {
   stringEncriptada = stringEncriptada.toLowerCase();
@@ -89,12 +100,12 @@ function btnCopiar() {
 }
 
 //EXTRA 2: boton pegar?
-const COPY = document.querySelector('#copy');
-const PASTE = document.querySelector('#paste');
-const VALUE = document.querySelector('#value');
-const BIN = document.querySelector('#paste-bin');
+const COPY = document.querySelector("#copy");
+const PASTE = document.querySelector("#paste");
+const VALUE = document.querySelector("#value");
+const BIN = document.querySelector("#paste-bin");
 
-PASTE.addEventListener('click', async () => {
-  const READ = await navigator.clipboard.readText()
-  BIN.value = READ
-})
+PASTE.addEventListener("click", async () => {
+  const READ = await navigator.clipboard.readText();
+  BIN.value = READ;
+});
