@@ -18,6 +18,20 @@ const matrizCodigo = [
   ["u", "ufat"],
 ];
 
+//Validacion previa a encriptar
+
+// Creamos el evento para cada tecla pulsada
+document.getElementById("paste-bin").addEventListener("keypress", verificar);
+function verificar(e) {
+  // comprobamos con una expresion regular que el caracter pulsado sea
+  // una letra, numero o un espacio
+  if (e.key.match(/[a-z\s]/i) === null) {
+    // Si la tecla pulsada no es la correcta, eliminado la pulsación
+    e.preventDefault();
+    alert("Solo letras minúsculas y sin acentos");
+  }
+}
+
 // Función para encriptar//
 function encriptar(stringEncriptada) {
   stringEncriptada = stringEncriptada.toLowerCase();
@@ -89,12 +103,12 @@ function btnCopiar() {
 }
 
 //EXTRA 2: boton pegar?
-const COPY = document.querySelector('#copy');
-const PASTE = document.querySelector('#paste');
-const VALUE = document.querySelector('#value');
-const BIN = document.querySelector('#paste-bin');
+const COPY = document.querySelector("#copy");
+const PASTE = document.querySelector("#paste");
+const VALUE = document.querySelector("#value");
+const BIN = document.querySelector("#paste-bin");
 
-PASTE.addEventListener('click', async () => {
-  const READ = await navigator.clipboard.readText()
-  BIN.value = READ
-})
+PASTE.addEventListener("click", async () => {
+  const READ = await navigator.clipboard.readText();
+  BIN.value = READ;
+});
