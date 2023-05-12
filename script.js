@@ -1,5 +1,5 @@
 //Variables//
-const textArea = document.querySelector(".text-area");
+const textArea = document.querySelector("#paste-bin");
 const mensaje = document.querySelector(".mensaje");
 
 // La letra "e" es convertida para "enter"
@@ -11,12 +11,37 @@ const mensaje = document.querySelector(".mensaje");
 // Defino constante con arrays dentro de un array.
 
 const matrizCodigo = [
+  // ["é", "e"],
+  // ["í", "i"],
+  // ["á", "a"],
+  // ["ó", "o"],
+  // ["ú", "u"],
+
   ["e", "enter"],
   ["i", "imes"],
   ["a", "ai"],
   ["o", "ober"],
   ["u", "ufat"],
 ];
+
+// Impedir caracteres especiales (acentos, mayúsculas, ñ)
+
+// function sinAcentos(){
+//   var texto = document.getElementById("paste-bin").value.toLowerCase();
+
+//   var stringEncriptada = texto.replace(/ée/igm,"enter");
+//   var stringEncriptada = stringEncriptada.replace(/ó/igm,"o");
+//   var stringEncriptada = stringEncriptada.replace(/í/igm,"i");
+//   var stringEncriptada = stringEncriptada.replace(/á/igm,"a");
+//   var stringEncriptada = stringEncriptada.replace(/ú/igm,"u");
+
+//   document.getElementById("miInput").innerHTML = stringEncriptada;
+
+//   encriptar(stringEncriptada);
+
+// }
+
+
 
 // Función para encriptar//
 function encriptar(stringEncriptada) {
@@ -48,6 +73,9 @@ function btnDesencriptar() {
   const textEncriptado = desencriptar(textArea.value);
   mensaje.value = textEncriptado;
   textArea.value = ""; //limpio el campo
+  mensaje.style.backgroundImage = "none"; //saco la imagen
+  document.getElementById("parrafo1").style.display = "none";
+  document.getElementById("parrafo2").style.display = "none";
 }
 
 //Función para desencriptar
@@ -89,13 +117,12 @@ function btnCopiar() {
 }
 
 //EXTRA 2: boton pegar?
-const COPY = document.querySelector('#copy');
-const PASTE = document.querySelector('#paste');
-const VALUE = document.querySelector('#value');
-const BIN = document.querySelector('#paste-bin');
+const COPY = document.querySelector("#copy");
+const PASTE = document.querySelector("#paste");
+const VALUE = document.querySelector("#value");
+const BIN = document.querySelector("#paste-bin");
 
-PASTE.addEventListener('click', async () => {
-  const READ = await navigator.clipboard.readText()
-  BIN.value = READ
-})
-
+PASTE.addEventListener("click", async () => {
+  const READ = await navigator.clipboard.readText();
+  BIN.value = READ;
+});

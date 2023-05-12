@@ -26,9 +26,11 @@
 
     <main>
         <section class="ingreso">
-            <input type="text" pattern="[a-z]{1,15}" id="paste-bin" class="text-area" placeholder="Ingrese el texto">
-            
-        
+            <div class="text-area">
+                <input type="text" id="paste-bin" name="paste-bin" pattern="[a-z ]*" 
+                    placeholder="Ingrese el texto" title="solo minúsculas y sin acento">
+            </div>
+
             <div class="informacion">
                 <img class="logoinfo" src="imagenes/bi_exclamation-circle-fill.png" alt="Logo de información" />
                 <h6>Solo letras minúsculas y sin acento</h6>
