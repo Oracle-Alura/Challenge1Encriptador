@@ -1,10 +1,13 @@
 # Edición #5: Challenge ONE Principiante en programación.
 
-![Logo Alura Challenges](imagenes/alurachallenges.png | width=50)
-<img src="imagenes/alurachallenges.png" width="100">
+<img src="imagenes/alurachallenges.png" width="1000">
+
+<img src="imagenes/one.png" width="100">
 
 ![Logo Oracle ONE](imagenes/one.png)
 
+
+**Enlace al encriptador:**
 `<link>` : <https://oracle-alura.github.io/Challenge1Encriptador/>
 
 ## Descripción
@@ -48,22 +51,24 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 
 ## Capturas
 
-![Vista celu](/imagenes/vistaCelu.png)
 
-![Vista Tablet](/imagenes/VistaTablet.png)
-
-![Vista Desktop](/imagenes/VistaDesktop.png)
+<img src="imagenes/vistaCelu.png" width="100">
 
 
-## Insignias
+<img src="imagenes/vistaTablet.png" width="100">
+
+
+<img src="imagenes/vistaDesktop.png" width="100">
+
+
+## Lenguajes
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 
 ## Funciones
 
-- Se escribe o se pega el texto a encriptar en el cuadro de texto.
-- El texto debe estar en minúsculas y sin acentos.
+- Se escribe o se pega el texto a encriptar en el cuadro de texto principal (en minúsculas y sin acentos).
 - Presionar el botón "Encriptar".
 - El texto encriptado aparecerá en el cuadro de texto contiguo.
 - Para desencriptar el texto, presionar el botón "Copiar", luego "Pegar" en el primer cuadro de texto y finalmente "Desencriptar".
