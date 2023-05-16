@@ -39,7 +39,7 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 - HTML
 - CSS
 - JS
-<img src="imagenes/html.png" width="100">
+<img src="imagenes/html.png" width="300">
 
 ## Capturas
 
