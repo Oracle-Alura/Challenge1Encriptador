@@ -1,8 +1,10 @@
 # Edición #5: Challenge ONE Principiante en programación.
 
- ![Logo Alura Challenges](imagenes/alurachallenges.png)
+![Logo Alura Challenges](imagenes/alurachallenges.png)
 
 ![Logo Oracle ONE](imagenes/one.png)
+
+`<link>`:<https://oracle-alura.github.io/Challenge1Encriptador/>
 
 ## Descripción
 
@@ -20,7 +22,7 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 - [Requisitos](#requisitos)
 - [Tecnologías utilizadas](#tecnologias)
 - [Capturas de pantalla](#capturas)
-- [Licencia](#licencia)
+
 
 ## Requisitos
 
@@ -31,7 +33,7 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 - El resultado debe ser mostrado en la pantalla.
 - Tiempo máximo: 4 semanas.
 
-Extras:
+**EXTRAS:**
 
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
@@ -46,24 +48,19 @@ Extras:
 
 ## Capturas
 
-    ```md
-    ![Vista celu](imagenes/VistaCelu.png)
-    ```
+![Vista celu](imagenes/VistaCelu.png)
 
-     ```md
-    ![Vista Tablet](imagenes/VistaTablet.png)
-    ```
+![Vista Tablet](imagenes/VistaTablet.png)
 
-      ```md
-    ![Vista Desktop](imagenes/VistaDesktop.png)
-    ```
+![Vista Desktop](imagenes/VistaDesktop.png)
+
 
 
 ## Insignias
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-Las insignias en sí mismas no son necesarias, pero demuestran un crédito callejero. Las insignias permiten a otros desarrolladores saber que usted sabe lo que está haciendo. Eche un vistazo a las insignias presentadas por [shields.io](https://shields.io/). Es posible que no comprenda lo que todas ellas representan ahora, pero lo comprenderá con el tiempo.
+
 
 ## Funciones
 
