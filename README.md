@@ -1,14 +1,15 @@
 # Edición #5: Challenge ONE Principiante en programación.
 
-![Logo Alura Challenges](imagenes/alurachallenges.png)
+![Logo Alura Challenges](imagenes/alurachallenges.png | width=50)
+<img src="imagenes/alurachallenges.png" width="100">
 
 ![Logo Oracle ONE](imagenes/one.png)
 
-`<link>`:<https://oracle-alura.github.io/Challenge1Encriptador/>
+`<link>` : <https://oracle-alura.github.io/Challenge1Encriptador/>
 
 ## Descripción
 
-Construcción de un encriptador de texto con Javascript.
+**Construcción de un encriptador de texto con Javascript.**
 
 - 01:
 Implementación de los proyectos con HTML, CSS y JavaScript
@@ -45,21 +46,18 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 - CSS
 - JS
 
-
 ## Capturas
 
-![Vista celu](imagenes/VistaCelu.png)
+![Vista celu](/imagenes/vistaCelu.png)
 
-![Vista Tablet](imagenes/VistaTablet.png)
+![Vista Tablet](/imagenes/VistaTablet.png)
 
-![Vista Desktop](imagenes/VistaDesktop.png)
-
+![Vista Desktop](/imagenes/VistaDesktop.png)
 
 
 ## Insignias
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
 
 
 ## Funciones
@@ -70,4 +68,3 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 - El texto encriptado aparecerá en el cuadro de texto contiguo.
 - Para desencriptar el texto, presionar el botón "Copiar", luego "Pegar" en el primer cuadro de texto y finalmente "Desencriptar".
 - El texto desencriptado aparecerá en el cuadro de texto correspondiente.
-
