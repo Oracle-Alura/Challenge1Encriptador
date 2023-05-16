@@ -1,10 +1,8 @@
 # Edición #5: Challenge ONE Principiante en programación.
 
-<img src="imagenes/alurachallenges.png" width="1000">
 
-<img src="imagenes/one.png" width="100">
 
-![Logo Oracle ONE](imagenes/one.png)
+<img src="imagenes/alurachallenges.png" width="500"> <img src="imagenes/one.png" width="200">
 
 
 **Enlace al encriptador:**
@@ -21,14 +19,7 @@ Implementación de los proyectos con HTML, CSS y JavaScript
 Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 
 
-## Índice
-
-- [Requisitos](#requisitos)
-- [Tecnologías utilizadas](#tecnologias)
-- [Capturas de pantalla](#capturas)
-
-
-## Requisitos
+## Requisitos del proyecto
 
 - Debe funcionar solo con letras minúsculas
 - No deben ser utilizados letras con acentos ni caracteres especiales
@@ -43,22 +34,19 @@ Profundizando en el uso de JavaScript para agregar funcionalidades al sistema
 
 - Como extra de extra se adicionó un botón "pegar" que aparece cuando se copia el texto encriptado. Posee la misma funcionalidad de "boton derecho + pegar", sobre el cuadro de texto principal, para poder realizar el desencriptado.
 
-## Tecnologías utilizadas
+## Tecnologias
 
 - HTML
 - CSS
 - JS
+<img src="imagenes/html.png" width="100">
 
 ## Capturas
 
 
-<img src="imagenes/vistaCelu.png" width="100">
+<img src="imagenes/vistaCelu.png" width="200"> <img src="imagenes/vistaTablet.png" width="350">
 
-
-<img src="imagenes/vistaTablet.png" width="100">
-
-
-<img src="imagenes/vistaDesktop.png" width="100">
+<img src="imagenes/vistaDesktop.png" width="1000">
 
 
 ## Lenguajes
